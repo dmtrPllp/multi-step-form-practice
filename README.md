@@ -38,6 +38,18 @@ The onboarding flow consists of three steps:
 2. Password setup (`/onboarding/password`)
 3. Username and terms agreement (`/onboarding/username`)
 
+### React 19 & Server Components Demo
+
+This project includes a dedicated demo page showcasing the latest React 19 features:
+
+- **useFormStatus** and **useOptimistic** hooks for enhanced form handling
+- **Server Actions** for direct form submission to server functions
+- **Server Components** that fetch data directly without useEffect
+- **useActionState** hook for form state management
+- **Zero Client JavaScript** for Server Components
+
+Visit `/react19-demo` to see these features in action.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
