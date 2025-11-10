@@ -20,6 +20,24 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Features
+
+### Multi-Step Form with Persistent Storage
+
+This project implements a multi-step onboarding form with the following features:
+
+- **Persistent Data Storage**: User data is stored in localStorage using Zustand middleware, ensuring data persists across page refreshes and browser sessions
+- **Form Validation**: Each step includes Zod schema validation with real-time error feedback
+- **Step Navigation**: Users can navigate between steps with proper validation and data persistence
+- **Progress Protection**: Users are automatically redirected to the appropriate step if they try to access a step without completing previous ones
+- **Data Hydration**: Form fields are pre-filled with previously entered data when users return to a step
+
+The onboarding flow consists of three steps:
+
+1. Name entry (`/onboarding/name`)
+2. Password setup (`/onboarding/password`)
+3. Username and terms agreement (`/onboarding/username`)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
